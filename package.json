@@ -1,0 +1,26 @@
+{
+  "name": "scheduler-jms",
+  "version": "0.1.0",
+  "description": "Enterprise JMS Message Sender",
+  "keywords": [
+    "java",
+    "mongodb",
+    "node-schedule"
+  ],
+  "author": "Ravi <ravi_gadapa@yahoo.com>",
+  "main": "./bin/server.js",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "dependencies": {
+	"node-schedule": ">=0.1.13",
+	"underscore": ">=1.5.2",
+	"java": "0.2.4"
+  },
+  "devDependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/department-of-veterans-affairs/vlerdas-scheduler-jms.git"
+  }
+}
