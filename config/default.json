@@ -1,0 +1,34 @@
+{
+        "jms": {
+                "type":"QUEUE",
+                "jmsConnectLibrary":"wlfullclient.jar",
+                "destinationJndiName":"jms.das.ComponentInboundDistributedQueue",
+                "connectionFactoryJndiName":"jms.das.DefaultXAConnectionFactory",
+                "java.naming.factory.initial":"weblogic.jndi.WLInitialContextFactory",
+                "java.naming.security.principal":"weblogic",
+                "java.naming.security.credentials":"qXr7#323",
+                "java.naming.provider.url":"t3://68.98.137.81:7171",
+                "staticHeaders": [
+                        { 
+                                "key": "JMSPriority",
+                                "value": 9
+                        },
+                        { 
+                                "key": "CustomPriority",
+                                "value": 9
+                        },
+                        { 
+                                "key": "RedisChannel",
+                                "value": "core.subscriptions.llfd"
+                        }
+                ],
+                "retry" : {
+                        "retries" : 10,
+                        "factor" : 3,
+                        "minTimeout" : 1000,
+                        "maxTimeout" : 60000,
+                        "randomize" : true
+                }
+        },
+        "debug": true
+}
